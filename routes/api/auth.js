@@ -66,7 +66,7 @@ router.post(
         config.get('jwtSecret'),
         { expiresIn: '5 days' },
         (err, token) => {
-          if (err) throw err;
+          if (err) console.log('here is the error!');
           res.json({ token });
         }
       );
